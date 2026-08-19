@@ -77,3 +77,11 @@ O wordmark combina o nome em Manrope com o monograma **MR** ao lado, desenhado a
 - No desktop, a barra lateral de contexto é persistente e contém a marca MR, contatos e navegação por âncoras; o menu compacto é exclusivo do celular.
 - O Azul de Referência `#1D5FA7` funciona sobretudo como cor de índice: réguas, âncoras, numerais, links e palavras-chave, nunca como massa decorativa dominante.
 - Cada seção principal mantém ao menos um sinal da Linha de Código: régua azul, metadado monoespaçado, referência numerada ou anotação de linha do tempo.
+
+---
+
+## Segunda versão: Arquivo de Operações
+
+Esta versão preserva a precisão editorial da primeira, mas reorganiza a abertura como um dossiê técnico. A composição usa uma faixa operacional de três linhas de atuação, títulos mais diretos e blocos de metadados para fazer o currículo parecer uma referência de engenharia, e não uma página promocional.
+
+O modo escuro é um equivalente material do tema claro: grafite profundo, superfícies azul-ardósia, texto frio de alta legibilidade e o azul de referência reservado para índices, ações e pontos de conexão. A preferência do visitante é persistida localmente e o controle permanece acessível tanto na barra lateral quanto no cabeçalho móvel.

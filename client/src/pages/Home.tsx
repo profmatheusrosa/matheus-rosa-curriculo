@@ -9,7 +9,9 @@ import {
   AtSign,
   BriefcaseBusiness,
   Code2,
+  Database,
   Download,
+  GitBranch,
   Github,
   GraduationCap,
   Languages,
@@ -17,8 +19,12 @@ import {
   Mail,
   MapPin,
   Menu,
+  Moon,
+  Server,
+  Sun,
   X,
 } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const skills = [
   "Java",
@@ -135,8 +141,29 @@ function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
   );
 }
 
+function ThemeToggle({ isDark, onToggle, compact = false }: { isDark: boolean; onToggle: () => void; compact?: boolean }) {
+  return (
+    <button
+      type="button"
+      className={`theme-switch${compact ? " compact" : ""}${isDark ? " is-dark" : ""}`}
+      onClick={onToggle}
+      aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
+      aria-pressed={isDark}
+      title={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
+    >
+      <span className="theme-switch-icon" aria-hidden="true">
+        {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
+      </span>
+      <span className="theme-switch-label">{isDark ? "Modo claro" : "Modo escuro"}</span>
+      <span className="theme-switch-track" aria-hidden="true"><span /></span>
+    </button>
+  );
+}
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
 
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -175,6 +202,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-5">
+          {toggleTheme && <ThemeToggle isDark={isDark} onToggle={toggleTheme} />}
           <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[#66717e]">
             <MapPin className="size-3.5 text-[#1D5FA7]" aria-hidden="true" />
             Brasília, DF
@@ -201,15 +229,18 @@ export default function Home() {
             <p className="mt-0.5 font-mono text-[9px] font-medium uppercase tracking-[0.13em] text-[#66717e]">Backend Java</p>
           </div>
         </a>
-        <button
-          type="button"
-          className="menu-button"
-          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-          aria-expanded={isMenuOpen}
-          onClick={() => setIsMenuOpen((open) => !open)}
-        >
-          {isMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        <div className="mobile-controls">
+          {toggleTheme && <ThemeToggle isDark={isDark} onToggle={toggleTheme} compact />}
+          <button
+            type="button"
+            className="menu-button"
+            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            {isMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
         {isMenuOpen && (
           <nav className="mobile-menu" aria-label="Seções do currículo">
             {navigation.map((item, index) => (
@@ -226,12 +257,16 @@ export default function Home() {
         <section id="inicio" className="hero-section">
           <img className="hero-art" src="/manus-storage/cv-editorial-hero_6b597056.png" alt="Composição abstrata de linhas técnicas em azul e grafite" />
           <div className="hero-content">
-            <p className="eyebrow mb-6">Currículo online · Brasília, DF</p>
+            <div className="hero-identity" aria-label="Matheus Rosa, Desenvolvedor Backend Java">
+              <img src="/manus-storage/mr-monogram_eb937988.png" alt="" aria-hidden="true" />
+              <span>Matheus Rosa <i>· Backend Java</i></span>
+            </div>
+            <p className="eyebrow mb-6">Dossiê profissional / 01.2026 · Brasília, DF</p>
             <h1 className="hero-title">
-              Sistemas estáveis começam com <span>decisões claras.</span>
+              Engenharia que <span>mantém o essencial em operação.</span>
             </h1>
             <p className="hero-copy">
-              Desenvolvedor Backend Java com experiência em sistemas corporativos, aplicações web, processos de TI e dados. Atualmente, mestrando em Ciência de Dados pela Universidade de Brasília.
+              Desenvolvedor Backend Java com experiência em sistemas corporativos, aplicações web, processos de TI e dados. Da análise ao código, atuação para sistemas que precisam permanecer confiáveis.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="mailto:matheusltr@gmail.com">
@@ -243,17 +278,32 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hero-index" aria-label="Resumo profissional">
-            <p>TRAJETÓRIA</p>
+          <div className="hero-index" aria-label="Ficha de trajetória profissional">
+            <p>REGISTRO DE ATUAÇÃO</p>
             <strong>2013 → atual</strong>
-            <span>Software, operações, dados e educação.</span>
+            <span>Software, operação, dados e formação técnica.</span>
+          </div>
+        </section>
+
+        <section className="operation-strip" aria-label="Áreas principais de atuação">
+          <div className="operation-item">
+            <Server className="size-5" aria-hidden="true" />
+            <div><p>LINHA 01</p><strong>Sistemas corporativos</strong><span>Manutenção e evolução</span></div>
+          </div>
+          <div className="operation-item">
+            <Database className="size-5" aria-hidden="true" />
+            <div><p>LINHA 02</p><strong>Dados e integrações</strong><span>Java, SQL e APIs REST</span></div>
+          </div>
+          <div className="operation-item">
+            <GitBranch className="size-5" aria-hidden="true" />
+            <div><p>LINHA 03</p><strong>Processos de TI</strong><span>Requisitos, ITIL e suporte</span></div>
           </div>
         </section>
 
         <section className="content-section intro-grid" aria-labelledby="atuação-title">
           <div>
-            <p className="eyebrow mb-5">Em foco</p>
-            <h2 id="atuação-title" className="intro-heading">Arquitetura, manutenção e melhoria contínua para ambientes que precisam funcionar todos os dias.</h2>
+            <p className="eyebrow mb-5">Nota de escopo</p>
+            <h2 id="atuação-title" className="intro-heading">Código, sustentação e melhoria contínua para ambientes que precisam funcionar todos os dias.</h2>
           </div>
           <div className="intro-note">
             <Code2 className="size-5 text-[#1D5FA7]" aria-hidden="true" />
@@ -306,6 +356,7 @@ export default function Home() {
             <div>
               <p className="eyebrow skills-eyebrow mb-5">03 / ferramental</p>
               <h2 id="competencias-title" className="skills-heading">Competências que conectam código, operação e contexto.</h2>
+              <p className="skills-reference">MAPA DE FERRAMENTAS · REFERÊNCIA 03</p>
               <div className="language-card">
                 <Languages className="size-5" aria-hidden="true" />
                 <div>
@@ -344,7 +395,7 @@ export default function Home() {
         </section>
 
         <footer className="footer">
-          <div className="flex items-center gap-2"><BriefcaseBusiness className="size-4 text-[#1D5FA7]" aria-hidden="true" /> Disponível para conexões profissionais.</div>
+          <div className="footer-signature"><img src="/manus-storage/mr-monogram_eb937988.png" alt="" aria-hidden="true" /><span><BriefcaseBusiness className="size-4 text-[#1D5FA7]" aria-hidden="true" /> Disponível para conexões profissionais.</span></div>
           <a className="footer-download" href="mailto:matheusltr@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20curr%C3%ADculo%20-%20Matheus%20Rosa">
             <Download className="size-3.5" aria-hidden="true" /> Solicitar versão em PDF
           </a>
