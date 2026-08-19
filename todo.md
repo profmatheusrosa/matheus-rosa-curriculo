@@ -105,3 +105,11 @@
 - [x] Substituir a matriz de competências por um novo formato documental.
 - [x] Validar a nova composição em desktop e celular.
 - [ ] Salvar e entregar a atualização final.
+
+# Décima terceira versão — Competências e Idiomas Separados
+
+- [x] Substituir a taxonomia atual por um novo formato de competências.
+- [x] Criar uma seção de idiomas independente, com título e espaçamento próprios.
+- [x] Preservar o ritmo documental do currículo A4.
+- [x] Validar as seções em desktop e celular.
+- [ ] Salvar e entregar a revisão estrutural.

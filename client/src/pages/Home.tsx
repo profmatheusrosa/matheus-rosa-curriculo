@@ -19,12 +19,10 @@ const education = [
   ["Graduação Sanduíche", "University of Waterloo · Canadá", "2012 — 2013"],
 ];
 
-const skills = [
-  ["Backend", "Java, Spring Boot, APIs REST, Hibernate/JPA, JDBC, Maven"],
-  ["Dados", "SQL, PostgreSQL, MySQL"],
-  ["Infra", "Linux, Docker, Git, Virtualização"],
-  ["Web", "JavaScript, Angular, HTML/CSS"],
-  ["Métodos", "UML, Metodologias Ágeis, ITIL"],
+const competencyAreas = [
+  ["Sistemas backend", "Java, Spring Boot, APIs REST, Hibernate/JPA, JDBC e Maven."],
+  ["Dados e infraestrutura", "SQL, PostgreSQL, MySQL, Linux, Docker, Git e virtualização."],
+  ["Produtos e métodos", "JavaScript, Angular, HTML/CSS, UML, metodologias ágeis e ITIL."],
 ];
 
 function ThemeButton() {
@@ -60,8 +58,8 @@ export default function Home() {
           <section className="doc-section" id="formacao"><h2>Formação acadêmica</h2><div className="education-doc-list">{education.map(([degree, school, date]) => <article key={degree}><div><h3>{degree}</h3><p>{school}</p></div><time>{date}</time></article>)}</div></section>
         </div>
 
-        <section className="doc-section document-skills-band"><h2>Competências</h2><div className="skill-shelf">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><div>{values.split(", ").map((skill) => <span key={skill}>{skill}</span>)}</div></article>)}</div></section>
-        <section className="document-language-strip"><span>Idiomas</span><div><strong>Inglês</strong><p>Avançado / fluente · TOEFL</p></div></section>
+        <section className="doc-section document-skills-band"><h2>Competências</h2><div className="competency-panels">{competencyAreas.map(([title, description]) => <article key={title}><h3>{title}</h3><p>{description}</p></article>)}</div></section>
+        <section className="doc-section languages-section"><h2>Idiomas</h2><div className="language-document-card"><strong>Inglês</strong><span>Avançado / fluente</span><small>TOEFL</small></div></section>
         <footer className="sheet-footer"><span>Matheus Rosa · Currículo digital</span><span>Atualizado em 2026</span></footer>
       </main>
       <p className="screen-hint"><Download className="size-3.5" /> Use “Imprimir / Salvar PDF” para gerar uma cópia do documento.</p>
