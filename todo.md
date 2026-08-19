@@ -97,3 +97,11 @@
 - [x] Remover os números de experiência, formação e competências.
 - [x] Remover os prefixos numéricos de idiomas e perfis profissionais.
 - [x] Validar a hierarquia visual após simplificar os títulos.
+
+# Décima segunda versão — Perfis no Cabeçalho
+
+- [x] Remover o bloco final de perfis profissionais.
+- [x] Adicionar ícones de GitHub e LinkedIn aos links do cabeçalho.
+- [x] Substituir a matriz de competências por um novo formato documental.
+- [x] Validar a nova composição em desktop e celular.
+- [ ] Salvar e entregar a atualização final.

@@ -50,7 +50,7 @@ export default function Home() {
         <div className="sheet-running-head"><span>MATHEUS ROSA — CURRÍCULO PROFISSIONAL</span><span>REF. MR/BE/2026 · 01 / 01</span></div>
         <header className="resume-head">
           <div><p className="doc-kicker">DESENVOLVEDOR BACKEND JAVA</p><h1>Matheus<br /><strong>Rosa</strong></h1></div>
-          <div className="head-meta"><span className="profile-meta-label">Perfis profissionais</span><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer">github.com/profmatheusrosa</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">linkedin.com/in/matheusrosabsb</a><p>Brasília, DF</p></div>
+          <div className="head-meta"><span className="profile-meta-label">Perfis profissionais</span><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="meta-link-icon" /> github.com/profmatheusrosa</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="meta-link-icon" /> linkedin.com/in/matheusrosabsb</a><p>Brasília, DF</p></div>
         </header>
 
         <section className="profile-summary"><span>PERFIL</span><p>Desenvolvedor Backend Java focado na sustentação e evolução de sistemas corporativos. Atua com dados, aplicações web e processos de TI, conectando análise, código, operação e ensino. Atualmente, cursando Mestrado em Ciência de Dados pela Universidade de Brasília.</p></section>
@@ -60,11 +60,8 @@ export default function Home() {
           <section className="doc-section" id="formacao"><h2>Formação acadêmica</h2><div className="education-doc-list">{education.map(([degree, school, date]) => <article key={degree}><div><h3>{degree}</h3><p>{school}</p></div><time>{date}</time></article>)}</div></section>
         </div>
 
-        <section className="doc-section document-skills-band"><h2>Competências</h2><div className="skill-matrix">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><div>{values.split(", ").map((skill) => <span key={skill}>{skill}</span>)}</div></article>)}</div></section>
-        <section className="document-information-strip">
-          <article className="language-inline"><span>Idiomas</span><div><strong>Inglês</strong><p>Avançado / fluente · TOEFL</p></div></article>
-          <article className="contact-inline"><span>Perfis profissionais</span><div><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></div></article>
-        </section>
+        <section className="doc-section document-skills-band"><h2>Competências</h2><div className="skill-shelf">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><div>{values.split(", ").map((skill) => <span key={skill}>{skill}</span>)}</div></article>)}</div></section>
+        <section className="document-language-strip"><span>Idiomas</span><div><strong>Inglês</strong><p>Avançado / fluente · TOEFL</p></div></section>
         <footer className="sheet-footer"><span>Matheus Rosa · Currículo digital</span><span>Atualizado em 2026</span></footer>
       </main>
       <p className="screen-hint"><Download className="size-3.5" /> Use “Imprimir / Salvar PDF” para gerar uma cópia do documento.</p>
