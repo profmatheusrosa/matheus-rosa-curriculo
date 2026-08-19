@@ -2,7 +2,7 @@
  * Direção visual: Currículo A4 Digital — documento profissional com página A4, margens, hierarquia editorial e regras de impressão.
  * A interface preserva apenas controles úteis de tema e impressão fora da folha documental.
  */
-import { Download, Github, Linkedin, Mail, Moon, Printer, Sun } from "lucide-react";
+import { Download, Github, Linkedin, Moon, Printer, Sun } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 
 const experiences = [
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="sheet-running-head"><span>MATHEUS ROSA — CURRÍCULO PROFISSIONAL</span><span>REF. MR/BE/2026 · 01 / 01</span></div>
         <header className="resume-head">
           <div><p className="doc-kicker">DESENVOLVEDOR BACKEND JAVA</p><h1>Matheus<br /><strong>Rosa</strong></h1></div>
-          <div className="head-meta"><p>Brasília, DF</p><a href="mailto:matheusltr@gmail.com">matheusltr@gmail.com</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">linkedin.com/in/matheusrosabsb</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer">github.com/profmatheusrosa</a></div>
+          <div className="head-meta"><p>Brasília, DF</p><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">linkedin.com/in/matheusrosabsb</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer">github.com/profmatheusrosa</a></div>
         </header>
 
         <section className="profile-summary"><span>PERFIL</span><p>Desenvolvedor Backend Java focado na sustentação e evolução de sistemas corporativos. Atua com dados, aplicações web e processos de TI, conectando análise, código, operação e ensino. Atualmente, cursando Mestrado em Ciência de Dados pela Universidade de Brasília.</p></section>
@@ -60,11 +60,10 @@ export default function Home() {
           <section className="doc-section" id="formacao"><h2><span>02</span> Formação acadêmica</h2><div className="education-doc-list">{education.map(([degree, school, date]) => <article key={degree}><div><h3>{degree}</h3><p>{school}</p></div><time>{date}</time></article>)}</div></section>
         </div>
 
-        <section className="doc-section document-skills-band"><h2><span>03</span> Competências</h2><div className="skill-line-list">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><p>{values}</p></article>)}</div></section>
+        <section className="doc-section document-skills-band"><h2><span>03</span> Competências</h2><div className="skill-compact-list">{skills.map(([label, values]) => <p key={label}><strong>{label}</strong><span>{values}</span></p>)}</div></section>
         <section className="document-information-strip">
           <article className="language-inline"><span>04 / IDIOMAS</span><div><strong>Inglês</strong><p>Avançado / fluente · TOEFL</p></div></article>
-          <article className="contact-inline"><span>05 / CONTATO</span><div><a href="mailto:matheusltr@gmail.com"><Mail className="size-4" /> E-mail</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></div></article>
-          <article className="availability-inline"><span>DISPONIBILIDADE</span><p>Aberto a conexões profissionais e oportunidades em tecnologia, dados e sistemas.</p></article>
+          <article className="contact-inline"><span>05 / PERFIS PROFISSIONAIS</span><div><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></div></article>
         </section>
         <footer className="sheet-footer"><span>Matheus Rosa · Currículo digital</span><span>Atualizado em 2026</span></footer>
       </main>

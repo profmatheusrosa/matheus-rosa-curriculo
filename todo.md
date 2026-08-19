@@ -69,3 +69,17 @@
 - [x] Preservar proporção A4, modos de leitura e impressão.
 - [x] Validar o documento em desktop e celular.
 - [ ] Salvar e entregar a versão em coluna única.
+
+# Décima versão — Competências Compactas
+
+- [x] Substituir as linhas extensas de competências por grupos técnicos concisos.
+- [x] Reduzir a altura da seção sem comprometer a legibilidade.
+- [x] Manter a coerência visual com o documento A4 e a impressão.
+- [x] Validar a nova densidade em desktop e celular.
+- [ ] Salvar e entregar a revisão das competências.
+
+# Ajuste de conteúdo — Contatos e disponibilidade
+
+- [x] Remover o e-mail do cabeçalho e de todos os atalhos de contato.
+- [x] Remover integralmente o bloco de disponibilidade.
+- [x] Manter somente GitHub e LinkedIn como formas de contato visíveis.
