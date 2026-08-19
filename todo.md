@@ -60,3 +60,12 @@
 - [x] Manter contato e alternância de tema sem descaracterizar o documento.
 - [x] Validar a leitura em desktop, celular e modo de impressão.
 - [ ] Salvar e entregar a versão documental.
+
+# Nona versão — Documento em Coluna Única
+
+- [x] Remover a barra lateral e unificar o fluxo de conteúdo principal.
+- [x] Reapresentar competências em uma faixa horizontal documental.
+- [x] Redistribuir idiomas e contato em blocos lineares ao fim da página.
+- [x] Preservar proporção A4, modos de leitura e impressão.
+- [x] Validar o documento em desktop e celular.
+- [ ] Salvar e entregar a versão em coluna única.

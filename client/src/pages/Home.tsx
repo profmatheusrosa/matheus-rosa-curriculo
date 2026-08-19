@@ -53,20 +53,19 @@ export default function Home() {
           <div className="head-meta"><p>Brasília, DF</p><a href="mailto:matheusltr@gmail.com">matheusltr@gmail.com</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">linkedin.com/in/matheusrosabsb</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer">github.com/profmatheusrosa</a></div>
         </header>
 
-        <section className="profile-summary"><span>PERFIL</span><p>Profissional de tecnologia com experiência em sistemas corporativos, desenvolvimento backend Java, bancos de dados e processos de TI. Atua entre análise, código, sustentação e ensino; atualmente, cursando Mestrado em Ciência de Dados pela Universidade de Brasília.</p></section>
+        <section className="profile-summary"><span>PERFIL</span><p>Desenvolvedor Backend Java focado na sustentação e evolução de sistemas corporativos. Atua com dados, aplicações web e processos de TI, conectando análise, código, operação e ensino. Atualmente, cursando Mestrado em Ciência de Dados pela Universidade de Brasília.</p></section>
 
         <div className="resume-layout">
-          <div className="resume-main-column">
-            <section className="doc-section" id="experiencia"><h2><span>01</span> Experiência profissional</h2><div className="experience-doc-list">{experiences.map((item) => <article key={item.organization + item.period}><div className="experience-date">{item.period}</div><div><h3>{item.role}</h3><p className="organization">{item.organization}</p><ul>{item.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></article>)}</div></section>
-            <section className="doc-section" id="formacao"><h2><span>02</span> Formação acadêmica</h2><div className="education-doc-list">{education.map(([degree, school, date]) => <article key={degree}><div><h3>{degree}</h3><p>{school}</p></div><time>{date}</time></article>)}</div></section>
-          </div>
-          <aside className="resume-side-column">
-            <section className="doc-section side-summary"><h2><span>03</span> Competências</h2><div className="skill-doc-list">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><p>{values}</p></article>)}</div></section>
-            <section className="doc-section"><h2><span>04</span> Idiomas</h2><div className="language-doc"><strong>Inglês</strong><span>Avançado / fluente</span><small>TOEFL</small></div></section>
-            <section className="doc-section document-contact"><h2><span>05</span> Contato</h2><a href="mailto:matheusltr@gmail.com"><Mail className="size-4" /> Enviar e-mail</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></section>
-            <section className="document-note"><span>Disponibilidade</span><p>Aberto a conexões profissionais e oportunidades em tecnologia, dados e sistemas.</p></section>
-          </aside>
+          <section className="doc-section" id="experiencia"><h2><span>01</span> Experiência profissional</h2><div className="experience-doc-list">{experiences.map((item) => <article key={item.organization + item.period}><div className="experience-date">{item.period}</div><div><h3>{item.role}</h3><p className="organization">{item.organization}</p><ul>{item.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></article>)}</div></section>
+          <section className="doc-section" id="formacao"><h2><span>02</span> Formação acadêmica</h2><div className="education-doc-list">{education.map(([degree, school, date]) => <article key={degree}><div><h3>{degree}</h3><p>{school}</p></div><time>{date}</time></article>)}</div></section>
         </div>
+
+        <section className="doc-section document-skills-band"><h2><span>03</span> Competências</h2><div className="skill-line-list">{skills.map(([label, values]) => <article key={label}><h3>{label}</h3><p>{values}</p></article>)}</div></section>
+        <section className="document-information-strip">
+          <article className="language-inline"><span>04 / IDIOMAS</span><div><strong>Inglês</strong><p>Avançado / fluente · TOEFL</p></div></article>
+          <article className="contact-inline"><span>05 / CONTATO</span><div><a href="mailto:matheusltr@gmail.com"><Mail className="size-4" /> E-mail</a><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" /> GitHub</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></div></article>
+          <article className="availability-inline"><span>DISPONIBILIDADE</span><p>Aberto a conexões profissionais e oportunidades em tecnologia, dados e sistemas.</p></article>
+        </section>
         <footer className="sheet-footer"><span>Matheus Rosa · Currículo digital</span><span>Atualizado em 2026</span></footer>
       </main>
       <p className="screen-hint"><Download className="size-3.5" /> Use “Imprimir / Salvar PDF” para gerar uma cópia do documento.</p>
