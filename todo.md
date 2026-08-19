@@ -33,3 +33,12 @@
 - [x] Preservar a alternância persistente entre modo claro e escuro com contraste elevado.
 - [x] Validar tipografia, espaçamento e responsividade da versão minimalista.
 - [ ] Salvar e entregar a versão minimalista.
+
+# Sexta versão — Tech Moderna
+
+- [x] Definir uma paleta escura, acentos elétricos controlados e tipografia contemporânea.
+- [x] Reconstruir abertura, navegação e blocos de conteúdo como uma interface de produto digital.
+- [x] Apresentar experiência, formação e competências em componentes modernos com hierarquia clara.
+- [x] Preservar e adaptar a alternância entre temas claro e escuro.
+- [x] Validar contraste, interação e responsividade da versão tech.
+- [ ] Salvar e entregar a versão tech e moderna.

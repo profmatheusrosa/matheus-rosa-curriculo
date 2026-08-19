@@ -1,4 +1,4 @@
-/** Direção visual: Linha de Código — estrutura pública de leitura editorial e sem distrações. */
+/** Direção visual: Signal Systems — plataforma técnica moderna com temas claro e escuro. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -20,7 +20,7 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light" switchable>
+      <ThemeProvider defaultTheme="dark" switchable>
         <TooltipProvider>
           <Toaster />
           <Router />

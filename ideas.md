@@ -115,3 +115,11 @@ O tema claro é uma estação de trabalho em tons de cinza-verde e o modo escuro
 Esta direção remove a estética de terminal, ilustrações, card stacks e decoração de interface. A estrutura se concentra em leitura contínua: nome em grande escala, informação editorial, linhas de separação finas e blocos de conteúdo com bastante espaço em branco.
 
 O tema claro usa branco quente, tinta quase preta e azul-marinho como único acento. O tema escuro inverte a relação entre superfície e texto com um azul dessaturado de alta legibilidade. Source Serif 4 dá expressão aos títulos; Manrope mantém todos os textos profissionais precisos e calmos.
+
+---
+
+## Sexta versão: Signal Systems
+
+Esta direção transforma o currículo em uma interface de produto digital premium. O ambiente tem superfícies em grafite, azul elétrico reservado para sinalização e uma grade estrutural muito discreta; não há neon, cidade futurista ou estética cyberpunk.
+
+A composição é assimétrica: hero de alto contraste com arquitetura de dados, cards com estados operacionais para a trajetória, stack em módulos de produto e formação em painel imersivo. Manrope oferece leitura humana e IBM Plex Mono identifica dados, status e metadados. O modo escuro é a experiência principal; o claro é a adaptação sóbria do mesmo sistema.
