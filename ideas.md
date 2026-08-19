@@ -1,0 +1,79 @@
+# Direção visual — Currículo online de Matheus Rosa
+
+## Três possibilidades de linguagem visual
+
+### 1. Linha de Código
+**Muito breve:** Um currículo editorial que traduz a clareza de um bom sistema: hierarquia precisa, linhas de referência e informação que se revela com segurança. O resultado é técnico, sóbrio e memorável sem recorrer a clichês de tecnologia.
+
+**Probabilidade:** 0,07
+
+### 2. Mapa de Competências
+**Muito breve:** Uma leitura quase cartográfica da trajetória profissional, usando uma malha discreta, pontos de percurso e blocos de conhecimento. É uma proposta visualmente mais experimental e orientada a conexões.
+
+**Probabilidade:** 0,04
+
+### 3. Arquivo de Operações
+**Muito breve:** Um formato inspirado em documentação de engenharia e relatórios operacionais, com tipografia condensada, referências técnicas e contrastes firmes. Comunica pragmatismo e experiência em ambientes corporativos.
+
+**Probabilidade:** 0,09
+
+---
+
+## Direção escolhida: Linha de Código
+
+### Movimento de design
+Editorial técnico contemporâneo, inspirado na precisão da tipografia suíça e em anotações de engenharia de software. A página deve funcionar como uma leitura contínua e organizada, não como um conjunto de cartões genéricos.
+
+### Princípios centrais
+
+1. **Hierarquia antes de decoração:** títulos, cronologia e competências conduzem a leitura de forma imediata.
+2. **Assimetria funcional:** uma coluna lateral persistente organiza a identidade e os contatos; o conteúdo principal segue uma cadência editorial ampla.
+3. **Contraste tranquilo:** fundo quente quase branco, texto grafite e azul-cobalto usado como índice, não como preenchimento excessivo.
+4. **Rigor humano:** linhas, rótulos e pequenos detalhes técnicos sugerem método sem reduzir a trajetória a uma interface fria.
+
+### Filosofia de cor
+O branco quente reduz a dureza visual e ajuda o conteúdo a respirar. O grafite carrega a leitura longa com conforto. O azul-cobalto é reservado para pontos de orientação, ligações e marcadores de trajetória, criando reconhecimento consistente e profissional.
+
+### Paradigma de layout
+No desktop, uma barra lateral fixa de contexto ocupa a margem esquerda e contém a assinatura, contatos e navegação por âncoras. O restante é uma coluna editorial com blocos de largura controlada, divisórias horizontais e uma linha do tempo de experiências. No celular, a lateral se converte em cabeçalho compacto, mantendo a ordem de leitura natural.
+
+### Elementos de assinatura
+
+- Um monograma geométrico **MR** construído a partir de dois traços interligados, usado como marca e favicon.
+- Réguas horizontais azul-cobalto que antecedem cada seção e funcionam como referências de código.
+- Rótulos monoespaçados em caixa alta para datas, áreas e agrupamentos técnicos.
+
+### Filosofia de interação
+Os elementos interativos devem ser evidentes, discretos e úteis. A navegação por âncoras desloca o leitor para cada seção; contatos e links externos são ações diretas. Estados de foco visíveis e uma resposta tátil breve nos botões comunicam precisão e cuidado.
+
+### Animação
+Entradas suaves somente ao carregar: opacidade e deslocamento vertical de até 12 px, em cascata leve. Hovers devem priorizar cor e sublinhado em links, sem movimentos excessivos. Duração entre 160 e 260 ms, com `cubic-bezier(0.23, 1, 0.32, 1)`. Todas as transições decorativas devem ser desativadas para pessoas que preferem movimento reduzido.
+
+### Sistema tipográfico
+**Manrope** para títulos e textos corridos, com pesos 400, 500, 600 e 700 para uma leitura contemporânea e ampla. **IBM Plex Mono** para metadados, datas e etiquetas técnicas. O nome ocupa escala expressiva; títulos de seção usam caixa alta, espaço entre letras e uma regra de alinhamento; textos ficam entre 15 e 18 px para leitura confortável.
+
+### Essência da marca
+**Um desenvolvedor Backend Java que transforma experiência em sistemas corporativos, dados e educação em soluções confiáveis para organizações que precisam operar melhor.**
+
+Personalidade: **metódica, acessível e confiável**.
+
+### Voz de marca
+A voz é objetiva, segura e humana. Evita promessas vazias, jargão de moda e frases genéricas.
+
+Exemplos:
+
+> "Sistemas estáveis começam com decisões claras."
+
+> "Da análise ao código, experiência para sustentar o que importa."
+
+### Wordmark e logo
+O wordmark combina o nome em Manrope com o monograma **MR** ao lado, desenhado a partir de hastes perpendiculares e um ponto de conexão. A marca não depende de um ícone clichê de código ou de uma fonte padrão; ela sugere estruturas conectadas e processos bem resolvidos.
+
+### Cor de assinatura
+**Azul de Referência — #1D5FA7.** Um azul-cobalto sóbrio, com energia suficiente para orientar o olhar e maturidade adequada para um contexto corporativo.
+
+## Style Decisions
+
+- No desktop, a barra lateral de contexto é persistente e contém a marca MR, contatos e navegação por âncoras; o menu compacto é exclusivo do celular.
+- O Azul de Referência `#1D5FA7` funciona sobretudo como cor de índice: réguas, âncoras, numerais, links e palavras-chave, nunca como massa decorativa dominante.
+- Cada seção principal mantém ao menos um sinal da Linha de Código: régua azul, metadado monoespaçado, referência numerada ou anotação de linha do tempo.
