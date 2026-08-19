@@ -99,3 +99,11 @@ O layout usa um cabeçalho horizontal, uma abertura em duas colunas com arte de 
 - O monograma MR é uma forma geométrica construída por dois traços conectados e um nó central; substitui qualquer aparência de ícone genérico.
 - Verde-esmeralda é reservado para identidade, ações e ênfases; coral atua apenas como acento de calor. Os painéis secundários permanecem em superfícies discretas e próximas ao fundo areia.
 - Arcos interrompidos e formas conectadas são o motivo recorrente em cards, arte e marca, traduzindo a ideia de sistemas que se conectam sem retomar a linguagem de blueprint.
+
+---
+
+## Quarta versão: Developer Profile
+
+Esta direção deixa de ser um portfólio visual e torna-se um perfil técnico de desenvolvedor. A hierarquia imita um ambiente de terminal contemporâneo: barra lateral de workspace, janela de comando, bloco de status, `git log` para experiências, `stack.json` para competências e diretório de arquivos para formação.
+
+O tema claro é uma estação de trabalho em tons de cinza-verde e o modo escuro se aproxima de um terminal real, mas sem neon excessivo. Verde-esmeralda representa comandos, disponibilidade e ações; coral sinaliza ênfase e chaves de sintaxe. Space Grotesk sustenta títulos e JetBrains Mono define comandos, dados e metadados.

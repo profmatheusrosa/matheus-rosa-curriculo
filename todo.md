@@ -15,3 +15,12 @@
 - [x] Preservar e reposicionar o seletor persistente de tema dentro da nova interface.
 - [x] Validar contraste, leitura e responsividade na terceira versão.
 - [ ] Salvar e entregar o redesenho concluído.
+
+# Quarta versão — Developer Profile
+
+- [x] Definir a paleta, tipografia monoespaçada e componentes inspirados em terminal.
+- [x] Reconstruir navegação, abertura e seções como um perfil técnico de desenvolvedor.
+- [x] Converter experiência, formação e competências para blocos de dados e comandos legíveis.
+- [x] Manter a alternância persistente entre modo claro e escuro na nova interface.
+- [x] Validar o layout Developer Profile em desktop e celular.
+- [ ] Salvar e entregar a versão escolhida pelo usuário.
