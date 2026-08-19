@@ -51,3 +51,12 @@
 - [x] Preservar a alternância entre modo claro e escuro dentro do novo sistema.
 - [x] Validar a clareza dos dados, a navegação e a responsividade.
 - [ ] Salvar e entregar a versão focada em dados e programação.
+
+# Oitava versão — Documento PDF Digital
+
+- [x] Definir página A4, margens, tipografia e paleta de documento profissional.
+- [x] Reorganizar o conteúdo em cabeçalho, resumo, experiência, formação e competências de leitura linear.
+- [x] Criar regras de impressão que preservem o layout documental.
+- [x] Manter contato e alternância de tema sem descaracterizar o documento.
+- [x] Validar a leitura em desktop, celular e modo de impressão.
+- [ ] Salvar e entregar a versão documental.

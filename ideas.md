@@ -131,3 +131,11 @@ A composição é assimétrica: hero de alto contraste com arquitetura de dados,
 Esta direção troca a landing page de produto por um espaço de análise técnico. O conteúdo é estruturado como consulta, tabela de resultados, schema relacional e caminho de conhecimento: programação e dados passam a ser a própria linguagem visual do currículo.
 
 O tema claro usa branco técnico, azul de consulta, verde para estados ativos e laranja exclusivamente para literais de código. O modo escuro transforma o mesmo sistema em um ambiente analítico profundo. Manrope sustenta a leitura; IBM Plex Mono define SQL, metadados e resultados.
+
+---
+
+## Oitava versão: Currículo A4 Digital
+
+Esta direção faz o site parecer um currículo em PDF sem transformar o conteúdo em imagem: uma folha A4 central, fundo de área de trabalho, margens precisas, cabeçalho corrido e rodapé de página. A estrutura concentra a leitura em nome, resumo, experiência, formação e competências.
+
+Source Serif 4 cria a hierarquia documental dos títulos; Source Sans 3 mantém o corpo compacto e profissional. O azul-ardósia é reservado para títulos, índices e links. Há regras de impressão para preservar a aparência da folha A4 quando o visitante escolher salvar em PDF.

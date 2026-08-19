@@ -1,4 +1,4 @@
-/** Direção visual: Relational Data Studio — perfil de dados e programação com temas claro e escuro. */
+/** Direção visual: Currículo A4 Digital — documento profissional com leitura e impressão. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
