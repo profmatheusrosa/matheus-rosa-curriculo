@@ -85,3 +85,17 @@ O wordmark combina o nome em Manrope com o monograma **MR** ao lado, desenhado a
 Esta versão preserva a precisão editorial da primeira, mas reorganiza a abertura como um dossiê técnico. A composição usa uma faixa operacional de três linhas de atuação, títulos mais diretos e blocos de metadados para fazer o currículo parecer uma referência de engenharia, e não uma página promocional.
 
 O modo escuro é um equivalente material do tema claro: grafite profundo, superfícies azul-ardósia, texto frio de alta legibilidade e o azul de referência reservado para índices, ações e pontos de conexão. A preferência do visitante é persistida localmente e o controle permanece acessível tanto na barra lateral quanto no cabeçalho móvel.
+
+---
+
+## Terceira versão: Ateliê de Produto
+
+Esta direção rompe com o currículo editorial de engenharia. A página abandona a barra lateral, os índices, a paleta azul-cobalto e as linhas de dossiê para assumir uma linguagem de portfólio de produto contemporâneo: fundo areia claro, verde-esmeralda, coral, superfícies macias e composições abstratas táteis.
+
+O layout usa um cabeçalho horizontal, uma abertura em duas colunas com arte de still life, cartões de experiência por contexto, formação em uma grade cromática e uma seção de contato imersiva. A tipografia DM Sans torna a leitura mais ampla e informal; DM Mono permanece apenas em pequenos rótulos. No modo escuro, o visual muda para verdes profundos e coral suave, preservando a sensação de ateliê e não a estética técnica anterior.
+
+## Style Decisions
+
+- O monograma MR é uma forma geométrica construída por dois traços conectados e um nó central; substitui qualquer aparência de ícone genérico.
+- Verde-esmeralda é reservado para identidade, ações e ênfases; coral atua apenas como acento de calor. Os painéis secundários permanecem em superfícies discretas e próximas ao fundo areia.
+- Arcos interrompidos e formas conectadas são o motivo recorrente em cards, arte e marca, traduzindo a ideia de sistemas que se conectam sem retomar a linguagem de blueprint.

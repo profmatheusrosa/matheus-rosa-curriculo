@@ -1,407 +1,231 @@
 /**
- * Direção visual: Linha de Código — editorial técnico com assimetria funcional,
- * azul de referência e leitura cronológica precisa. Cada decisão deve reforçar
- * uma trajetória profissional confiável, metódica e acessível.
+ * Direção visual: Ateliê de Produto — portfólio humano, tátil e contemporâneo.
+ * A interface evita a estética de dossiê; usa superfícies foscas, acentos em verde e coral,
+ * composição em blocos de impacto e leitura acolhedora nos modos claro e escuro.
  */
-import { useState } from "react";
 import {
+  ArrowDownRight,
   ArrowUpRight,
-  AtSign,
   BriefcaseBusiness,
+  CircleArrowUp,
   Code2,
-  Database,
-  Download,
-  GitBranch,
   Github,
   GraduationCap,
   Languages,
   Linkedin,
   Mail,
   MapPin,
-  Menu,
   Moon,
-  Server,
+  Send,
+  Sparkles,
   Sun,
-  X,
 } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 
 const skills = [
-  "Java",
-  "Spring Boot",
-  "APIs REST",
-  "SQL",
-  "PostgreSQL",
-  "MySQL",
-  "Hibernate/JPA",
-  "JDBC",
-  "Maven",
-  "Git",
-  "Linux",
-  "Docker",
-  "JavaScript",
-  "Angular",
-  "HTML/CSS",
-  "UML",
-  "Metodologias Ágeis",
-  "ITIL",
-  "Virtualização",
+  "Java", "Spring Boot", "APIs REST", "SQL", "PostgreSQL", "MySQL", "Hibernate/JPA",
+  "JDBC", "Maven", "Git", "Linux", "Docker", "JavaScript", "Angular", "HTML/CSS",
+  "UML", "Metodologias Ágeis", "ITIL", "Virtualização",
 ];
 
 const experiences = [
   {
-    period: "2026 — atual",
-    role: "Técnico Bancário — TI",
+    period: "2026 — hoje",
     company: "CAIXA",
+    role: "Técnico Bancário — TI",
     place: "Brasília, DF",
+    tone: "mint",
     highlights: ["Capítulo de Codificação."],
   },
   {
-    period: "2019 — atual",
-    role: "Professor de TI",
+    period: "2019 — hoje",
     company: "Escola Técnica de Brasília",
+    role: "Professor de TI",
     place: "Brasília, DF",
+    tone: "coral",
     highlights: [
-      "Ministrou disciplinas de Programação, Banco de Dados, Gestão de TI e Modelagem de Sistemas.",
-      "Desenvolvimento de materiais didáticos e projetos práticos.",
+      "Programação, Banco de Dados, Gestão de TI e Modelagem de Sistemas.",
+      "Materiais didáticos e projetos práticos.",
     ],
   },
   {
     period: "2016 — 2026",
-    role: "Analista de TI",
     company: "Universidade de Brasília",
+    role: "Analista de TI",
     place: "Brasília, DF",
+    tone: "sun",
     highlights: [
-      "Desenvolvimento e manutenção de sistemas corporativos utilizando Java e SQL.",
-      "Implementação de melhorias em aplicações web e processos internos.",
-      "Administração e sustentação de plataformas corporativas.",
-      "Levantamento de requisitos e contratações públicas de TI.",
-      "Administração da Central de Serviços com foco em práticas ITIL.",
-      "Suporte técnico e análise de incidentes em ambientes Linux e Windows.",
-      "Manutenção e administração de plataformas Joomla e WordPress.",
+      "Sistemas corporativos em Java e SQL; aplicações web e processos internos.",
+      "Sustentação de plataformas, levantamento de requisitos e contratações públicas de TI.",
+      "Central de Serviços com práticas ITIL, suporte em Linux e Windows e plataformas Joomla e WordPress.",
     ],
   },
   {
     period: "2013 — 2014",
-    role: "Programador",
     company: "Lakes Environmental",
+    role: "Programador",
     place: "Waterloo, Canadá",
+    tone: "lilac",
     highlights: [
-      "Desenvolvimento de aplicações web utilizando .NET, JavaScript, jQuery e ASP.NET.",
-      "Modernização de sistemas legados com migração de código Delphi para C++.",
-      "Manutenção evolutiva e sustentação de aplicações.",
+      "Aplicações web com .NET, JavaScript, jQuery e ASP.NET.",
+      "Modernização de sistemas legados e sustentação de aplicações.",
     ],
   },
 ];
 
 const education = [
-  {
-    period: "Em andamento",
-    degree: "Mestrado em Ciência de Dados",
-    school: "Universidade de Brasília",
-    place: "Brasília, DF",
-  },
-  {
-    period: "2016 — 2017",
-    degree: "Pós-graduação em Gestão e Desenvolvimento de Sistemas de Informação",
-    school: "Faculdade JK",
-    place: "Brasília, DF",
-  },
-  {
-    period: "2009 — 2015",
-    degree: "Graduação em Computação",
-    school: "Universidade de Brasília",
-    place: "Brasília, DF",
-  },
-  {
-    period: "2012 — 2013",
-    degree: "Graduação Sanduíche",
-    school: "University of Waterloo",
-    place: "Canadá",
-  },
+  { period: "Em andamento", degree: "Mestrado em Ciência de Dados", school: "Universidade de Brasília", className: "education-card large" },
+  { period: "2016 — 2017", degree: "Pós em Gestão e Desenvolvimento de Sistemas de Informação", school: "Faculdade JK", className: "education-card coral" },
+  { period: "2009 — 2015", degree: "Graduação em Computação", school: "Universidade de Brasília", className: "education-card mint" },
+  { period: "2012 — 2013", degree: "Graduação Sanduíche", school: "University of Waterloo · Canadá", className: "education-card ink" },
 ];
 
-const navigation = [
-  { label: "Visão geral", href: "#inicio" },
-  { label: "Experiência", href: "#experiencia" },
-  { label: "Formação", href: "#formacao" },
-  { label: "Competências", href: "#competencias" },
-  { label: "Contato", href: "#contato" },
-];
+function ThemeToggle() {
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
 
-function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
-  return (
-    <div className="mb-8 flex items-end gap-4 sm:mb-10">
-      <div className="h-[3px] w-12 shrink-0 bg-[#1D5FA7] sm:w-16" aria-hidden="true" />
-      <div>
-        <p className="eyebrow">{eyebrow}</p>
-        <h2 className="section-title">{title}</h2>
-      </div>
-    </div>
-  );
-}
+  if (!toggleTheme) return null;
 
-function ThemeToggle({ isDark, onToggle, compact = false }: { isDark: boolean; onToggle: () => void; compact?: boolean }) {
   return (
     <button
+      className="theme-toggle"
       type="button"
-      className={`theme-switch${compact ? " compact" : ""}${isDark ? " is-dark" : ""}`}
-      onClick={onToggle}
+      onClick={toggleTheme}
       aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
       aria-pressed={isDark}
-      title={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
     >
-      <span className="theme-switch-icon" aria-hidden="true">
-        {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
-      </span>
-      <span className="theme-switch-label">{isDark ? "Modo claro" : "Modo escuro"}</span>
-      <span className="theme-switch-track" aria-hidden="true"><span /></span>
+      {isDark ? <Sun className="size-4" aria-hidden="true" /> : <Moon className="size-4" aria-hidden="true" />}
+      <span>{isDark ? "Claro" : "Escuro"}</span>
     </button>
   );
 }
 
-export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
-  const isDark = theme === "dark";
-
-  const closeMenu = () => setIsMenuOpen(false);
-
+function SectionHeading({ kicker, title, copy }: { kicker: string; title: string; copy?: string }) {
   return (
-    <div className="min-h-screen bg-[#f7f4ed] text-[#20262e]">
-      <a className="skip-link" href="#conteudo">
-        Pular para o conteúdo
-      </a>
+    <div className="section-heading">
+      <p className="section-kicker">{kicker}</p>
+      <h2>{title}</h2>
+      {copy && <p className="section-copy">{copy}</p>}
+    </div>
+  );
+}
 
-      <aside className="sidebar" aria-label="Resumo e navegação">
-        <div className="flex flex-col gap-9">
-          <a className="brand-lockup" href="#inicio" aria-label="Início — Matheus Rosa">
-            <img src="/manus-storage/mr-monogram_eb937988.png" alt="Marca abstrata MR" className="brand-mark" />
-            <div>
-              <p className="font-display text-xl font-bold tracking-[-0.045em] text-[#20262e]">Matheus Rosa</p>
-              <p className="mt-1 font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-[#66717e]">
-                Backend Java
-              </p>
-            </div>
-          </a>
+export default function Home() {
+  return (
+    <div className="atelier-page">
+      <a href="#conteudo" className="skip-link">Pular para o conteúdo</a>
 
-          <div className="sidebar-rule" />
-
-          <nav aria-label="Seções do currículo">
-            <ul className="space-y-1">
-              {navigation.map((item, index) => (
-                <li key={item.href}>
-                  <a className="sidebar-link" href={item.href}>
-                    <span className="font-mono text-[10px] text-[#1D5FA7]">0{index + 1}</span>
-                    <span>{item.label}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-
-        <div className="space-y-5">
-          {toggleTheme && <ThemeToggle isDark={isDark} onToggle={toggleTheme} />}
-          <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[#66717e]">
-            <MapPin className="size-3.5 text-[#1D5FA7]" aria-hidden="true" />
-            Brasília, DF
-          </div>
-          <div className="flex gap-3">
-            <a className="social-link" href="mailto:matheusltr@gmail.com" aria-label="Enviar e-mail para Matheus Rosa">
-              <Mail className="size-4" />
-            </a>
-            <a className="social-link" href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer" aria-label="Abrir GitHub de Matheus Rosa">
-              <Github className="size-4" />
-            </a>
-            <a className="social-link" href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer" aria-label="Abrir LinkedIn de Matheus Rosa">
-              <Linkedin className="size-4" />
-            </a>
-          </div>
-        </div>
-      </aside>
-
-      <header className="mobile-header">
-        <a className="brand-lockup" href="#inicio" onClick={closeMenu} aria-label="Início — Matheus Rosa">
-          <img src="/manus-storage/mr-monogram_eb937988.png" alt="Marca abstrata MR" className="brand-mark size-10" />
-          <div>
-            <p className="font-display text-base font-bold tracking-[-0.04em] text-[#20262e]">Matheus Rosa</p>
-            <p className="mt-0.5 font-mono text-[9px] font-medium uppercase tracking-[0.13em] text-[#66717e]">Backend Java</p>
-          </div>
+      <header className="atelier-nav">
+        <a href="#inicio" className="wordmark" aria-label="Início — Matheus Rosa">
+          <svg className="wordmark-mark" viewBox="0 0 42 36" fill="none" aria-hidden="true">
+            <path d="M3.5 31.5V5.5L12.1 18.2L20.7 5.5V31.5" />
+            <path d="M25.5 31.5V5.5H31.2C35.2 5.5 37.5 7.7 37.5 11.5C37.5 15.3 35.2 17.4 31.2 17.4H25.5M31.1 17.4L38.2 31.5" />
+            <circle cx="21" cy="18.2" r="2.1" fill="currentColor" stroke="none" />
+          </svg>
+          <span>Matheus Rosa</span>
         </a>
-        <div className="mobile-controls">
-          {toggleTheme && <ThemeToggle isDark={isDark} onToggle={toggleTheme} compact />}
-          <button
-            type="button"
-            className="menu-button"
-            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={isMenuOpen}
-            onClick={() => setIsMenuOpen((open) => !open)}
-          >
-            {isMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
-        </div>
-        {isMenuOpen && (
-          <nav className="mobile-menu" aria-label="Seções do currículo">
-            {navigation.map((item, index) => (
-              <a key={item.href} href={item.href} className="mobile-menu-link" onClick={closeMenu}>
-                <span className="font-mono text-[10px] text-[#1D5FA7]">0{index + 1}</span>
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        )}
+        <nav className="atelier-links" aria-label="Navegação principal">
+          <a href="#trajetoria">Trajetória</a>
+          <a href="#formacao">Formação</a>
+          <a href="#competencias">Competências</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <ThemeToggle />
       </header>
 
-      <main id="conteudo" className="main-content">
-        <section id="inicio" className="hero-section">
-          <img className="hero-art" src="/manus-storage/cv-editorial-hero_6b597056.png" alt="Composição abstrata de linhas técnicas em azul e grafite" />
-          <div className="hero-content">
-            <div className="hero-identity" aria-label="Matheus Rosa, Desenvolvedor Backend Java">
-              <img src="/manus-storage/mr-monogram_eb937988.png" alt="" aria-hidden="true" />
-              <span>Matheus Rosa <i>· Backend Java</i></span>
+      <main id="conteudo">
+        <section id="inicio" className="atelier-hero">
+          <div className="hero-copy-block">
+            <div className="availability"><span /> Aberto a conexões profissionais</div>
+            <p className="hero-role">Desenvolvedor Backend Java · Brasília, DF</p>
+            <h1>Construo o que <em>continua funcionando.</em></h1>
+            <p className="hero-summary">Experiência em sistemas corporativos, dados e processos de TI. Uma trajetória que combina análise, código e educação para transformar necessidades reais em produtos confiáveis.</p>
+            <div className="hero-buttons">
+              <a href="mailto:matheusltr@gmail.com" className="button-primary"><Mail className="size-4" aria-hidden="true" /> Falar com Matheus</a>
+              <a href="#trajetoria" className="button-link">Conheça a trajetória <ArrowDownRight className="size-4" aria-hidden="true" /></a>
             </div>
-            <p className="eyebrow mb-6">Dossiê profissional / 01.2026 · Brasília, DF</p>
-            <h1 className="hero-title">
-              Engenharia que <span>mantém o essencial em operação.</span>
-            </h1>
-            <p className="hero-copy">
-              Desenvolvedor Backend Java com experiência em sistemas corporativos, aplicações web, processos de TI e dados. Da análise ao código, atuação para sistemas que precisam permanecer confiáveis.
-            </p>
-            <div className="hero-actions">
-              <a className="primary-action" href="mailto:matheusltr@gmail.com">
-                <Mail className="size-4" aria-hidden="true" />
-                Iniciar uma conversa
-              </a>
-              <a className="secondary-action" href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">
-                Ver LinkedIn <ArrowUpRight className="size-4" aria-hidden="true" />
-              </a>
+            <div className="hero-mini-facts">
+              <div><strong>Desde 2013</strong><span>em tecnologia</span></div>
+              <div><strong>Java &amp; Dados</strong><span>foco de atuação</span></div>
+              <div><strong>Inglês fluente</strong><span>TOEFL</span></div>
             </div>
           </div>
-          <div className="hero-index" aria-label="Ficha de trajetória profissional">
-            <p>REGISTRO DE ATUAÇÃO</p>
-            <strong>2013 → atual</strong>
-            <span>Software, operação, dados e formação técnica.</span>
+
+          <div className="hero-visual" aria-label="Composição abstrata em verde e coral">
+            <img src="/manus-storage/product-studio-hero_529f11dc.png" alt="Composição abstrata de objetos em verde e coral" />
+            <div className="visual-caption"><Sparkles className="size-4" aria-hidden="true" /><span>O cuidado está nos detalhes que deixam o sistema respirar.</span></div>
           </div>
         </section>
 
-        <section className="operation-strip" aria-label="Áreas principais de atuação">
-          <div className="operation-item">
-            <Server className="size-5" aria-hidden="true" />
-            <div><p>LINHA 01</p><strong>Sistemas corporativos</strong><span>Manutenção e evolução</span></div>
+        <section className="focus-section" aria-label="Resumo de atuação">
+          <div className="focus-intro">
+            <p>O que me move</p>
+            <strong>Unir clareza técnica e continuidade operacional.</strong>
           </div>
-          <div className="operation-item">
-            <Database className="size-5" aria-hidden="true" />
-            <div><p>LINHA 02</p><strong>Dados e integrações</strong><span>Java, SQL e APIs REST</span></div>
-          </div>
-          <div className="operation-item">
-            <GitBranch className="size-5" aria-hidden="true" />
-            <div><p>LINHA 03</p><strong>Processos de TI</strong><span>Requisitos, ITIL e suporte</span></div>
-          </div>
+          <div className="focus-card"><Code2 className="size-5" aria-hidden="true" /><span>Desenvolvimento<br />e manutenção</span></div>
+          <div className="focus-card"><BriefcaseBusiness className="size-5" aria-hidden="true" /><span>Processos de TI<br />que fazem sentido</span></div>
+          <div className="focus-card"><GraduationCap className="size-5" aria-hidden="true" /><span>Conhecimento<br />que se multiplica</span></div>
         </section>
 
-        <section className="content-section intro-grid" aria-labelledby="atuação-title">
-          <div>
-            <p className="eyebrow mb-5">Nota de escopo</p>
-            <h2 id="atuação-title" className="intro-heading">Código, sustentação e melhoria contínua para ambientes que precisam funcionar todos os dias.</h2>
-          </div>
-          <div className="intro-note">
-            <Code2 className="size-5 text-[#1D5FA7]" aria-hidden="true" />
-            <p>Atuação em análise de sistemas, sustentação de ambientes, manutenção evolutiva e melhoria de processos.</p>
-          </div>
-        </section>
-
-        <section id="experiencia" className="content-section" aria-labelledby="experiencia-title">
-          <SectionTitle eyebrow="01 / percurso profissional" title="Experiência" />
-          <div className="timeline" id="experiencia-title">
+        <section id="trajetoria" className="experience-section">
+          <SectionHeading kicker="Experiência" title="Uma carreira feita para resolver com consistência." copy="Cada etapa trouxe um novo contexto — e a mesma atenção ao que sustenta a operação no dia a dia." />
+          <div className="experience-stack">
             {experiences.map((experience, index) => (
-              <article className="timeline-entry" key={`${experience.company}-${experience.period}`}>
-                <div className="timeline-marker" aria-hidden="true">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                </div>
-                <div className="timeline-period">{experience.period}</div>
-                <div className="timeline-content">
-                  <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-                    <h3>{experience.role}</h3>
-                    <p className="company-line">{experience.company} <span>·</span> {experience.place}</p>
-                  </div>
-                  <ul className="experience-list">
-                    {experience.highlights.map((highlight) => (
-                      <li key={highlight}>{highlight}</li>
-                    ))}
-                  </ul>
-                </div>
+              <article className={`experience-card ${experience.tone}`} key={experience.company}>
+                <div className="experience-index">0{index + 1}</div>
+                <div className="experience-topline"><span>{experience.period}</span><span>{experience.place}</span></div>
+                <div className="experience-main"><div><p className="experience-company">{experience.company}</p><h3>{experience.role}</h3></div><ArrowUpRight className="size-5" aria-hidden="true" /></div>
+                <div className="experience-detail">{experience.highlights.map((highlight) => <p key={highlight}>{highlight}</p>)}</div>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="formacao" className="content-section education-section" aria-labelledby="formacao-title">
-          <SectionTitle eyebrow="02 / aprendizado contínuo" title="Formação" />
-          <div id="formacao-title" className="education-list">
+        <section id="formacao" className="education-section-v3">
+          <SectionHeading kicker="Formação" title="Curiosidade é uma habilidade de longo prazo." />
+          <div className="education-grid">
             {education.map((item) => (
-              <article className="education-entry" key={`${item.school}-${item.degree}`}>
-                <p className="timeline-period">{item.period}</p>
-                <div>
-                  <h3>{item.degree}</h3>
-                  <p>{item.school} <span>·</span> {item.place}</p>
-                </div>
+              <article className={item.className} key={item.degree}>
+                <span>{item.period}</span>
+                <h3>{item.degree}</h3>
+                <p>{item.school}</p>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="competencias" className="skills-section" aria-labelledby="competencias-title">
-          <div className="skills-layout">
-            <div>
-              <p className="eyebrow skills-eyebrow mb-5">03 / ferramental</p>
-              <h2 id="competencias-title" className="skills-heading">Competências que conectam código, operação e contexto.</h2>
-              <p className="skills-reference">MAPA DE FERRAMENTAS · REFERÊNCIA 03</p>
-              <div className="language-card">
-                <Languages className="size-5" aria-hidden="true" />
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#b9d4ef]">Idiomas</p>
-                  <strong>Inglês avançado / fluente</strong>
-                  <span>TOEFL</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-cloud" aria-label="Lista de competências técnicas">
-              {skills.map((skill) => <span key={skill}>{skill}</span>)}
-            </div>
+        <section id="competencias" className="skills-section-v3">
+          <div className="skills-copy-v3">
+            <p className="section-kicker">Competências</p>
+            <h2>Ferramentas são mais úteis quando se conectam ao contexto.</h2>
+            <div className="language-note"><Languages className="size-5" aria-hidden="true" /><span><strong>Inglês avançado / fluente</strong><small>TOEFL</small></span></div>
           </div>
-          <img className="skills-art" src="/manus-storage/cv-system-abstract_0b775fe7.png" alt="Textura abstrata de linhas e planos que representa sistemas conectados" />
-        </section>
-
-        <section id="contato" className="contact-section" aria-labelledby="contato-title">
-          <div>
-            <p className="eyebrow mb-5">04 / próximo passo</p>
-            <h2 id="contato-title" className="contact-heading">Vamos conversar sobre o que seu sistema precisa sustentar.</h2>
-          </div>
-          <div className="contact-actions">
-            <a className="contact-link prominent" href="mailto:matheusltr@gmail.com">
-              <span><AtSign className="size-4" aria-hidden="true" /> matheusltr@gmail.com</span>
-              <ArrowUpRight className="size-5" aria-hidden="true" />
-            </a>
-            <a className="contact-link" href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer">
-              <span><Github className="size-4" aria-hidden="true" /> github.com/profmatheusrosa</span>
-              <ArrowUpRight className="size-5" aria-hidden="true" />
-            </a>
-            <a className="contact-link" href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer">
-              <span><Linkedin className="size-4" aria-hidden="true" /> linkedin.com/in/matheusrosabsb</span>
-              <ArrowUpRight className="size-5" aria-hidden="true" />
-            </a>
+          <div className="skills-stage">
+            <img src="/manus-storage/product-studio-orbit_b942504e.png" alt="Composição abstrata de discos e formas em verde e coral" />
+            <div className="skill-list">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
           </div>
         </section>
 
-        <footer className="footer">
-          <div className="footer-signature"><img src="/manus-storage/mr-monogram_eb937988.png" alt="" aria-hidden="true" /><span><BriefcaseBusiness className="size-4 text-[#1D5FA7]" aria-hidden="true" /> Disponível para conexões profissionais.</span></div>
-          <a className="footer-download" href="mailto:matheusltr@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20curr%C3%ADculo%20-%20Matheus%20Rosa">
-            <Download className="size-3.5" aria-hidden="true" /> Solicitar versão em PDF
-          </a>
-          <p>© 2026 Matheus Rosa</p>
-        </footer>
+        <section id="contato" className="contact-section-v3">
+          <img className="contact-art" src="/manus-storage/product-studio-ribbon_48631ecc.png" alt="Fita abstrata coral e forma verde" />
+          <div className="contact-panel">
+            <p className="section-kicker">Vamos conversar</p>
+            <h2>Se há algo importante para construir ou melhorar, eu adoraria ouvir.</h2>
+            <a className="contact-email" href="mailto:matheusltr@gmail.com"><Send className="size-4" aria-hidden="true" /> matheusltr@gmail.com <ArrowUpRight className="size-4" aria-hidden="true" /></a>
+            <div className="contact-socials">
+              <a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="size-4" aria-hidden="true" /> GitHub</a>
+              <a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="size-4" aria-hidden="true" /> LinkedIn</a>
+              <span><MapPin className="size-4" aria-hidden="true" /> Brasília, DF</span>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <footer className="atelier-footer">
+        <span>© 2026 Matheus Rosa</span>
+        <span>Backend · Dados · Educação</span>
+        <a href="#inicio">Voltar ao início <CircleArrowUp className="size-4" aria-hidden="true" /></a>
+      </footer>
     </div>
   );
 }
