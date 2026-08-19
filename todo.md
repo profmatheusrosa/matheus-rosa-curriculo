@@ -42,3 +42,12 @@
 - [x] Preservar e adaptar a alternância entre temas claro e escuro.
 - [x] Validar contraste, interação e responsividade da versão tech.
 - [ ] Salvar e entregar a versão tech e moderna.
+
+# Sétima versão — Dados & Programação
+
+- [x] Definir a paleta, tipografia e metáforas visuais de dados, SQL e desenvolvimento.
+- [x] Reconstruir a abertura como um painel analítico de perfil técnico.
+- [x] Reorganizar experiência, formação e competências em tabelas, consultas e fluxos de dados legíveis.
+- [x] Preservar a alternância entre modo claro e escuro dentro do novo sistema.
+- [x] Validar a clareza dos dados, a navegação e a responsividade.
+- [ ] Salvar e entregar a versão focada em dados e programação.

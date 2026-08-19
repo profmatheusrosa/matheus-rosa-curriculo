@@ -123,3 +123,11 @@ O tema claro usa branco quente, tinta quase preta e azul-marinho como único ace
 Esta direção transforma o currículo em uma interface de produto digital premium. O ambiente tem superfícies em grafite, azul elétrico reservado para sinalização e uma grade estrutural muito discreta; não há neon, cidade futurista ou estética cyberpunk.
 
 A composição é assimétrica: hero de alto contraste com arquitetura de dados, cards com estados operacionais para a trajetória, stack em módulos de produto e formação em painel imersivo. Manrope oferece leitura humana e IBM Plex Mono identifica dados, status e metadados. O modo escuro é a experiência principal; o claro é a adaptação sóbria do mesmo sistema.
+
+---
+
+## Sétima versão: Relational Data Studio
+
+Esta direção troca a landing page de produto por um espaço de análise técnico. O conteúdo é estruturado como consulta, tabela de resultados, schema relacional e caminho de conhecimento: programação e dados passam a ser a própria linguagem visual do currículo.
+
+O tema claro usa branco técnico, azul de consulta, verde para estados ativos e laranja exclusivamente para literais de código. O modo escuro transforma o mesmo sistema em um ambiente analítico profundo. Manrope sustenta a leitura; IBM Plex Mono define SQL, metadados e resultados.
