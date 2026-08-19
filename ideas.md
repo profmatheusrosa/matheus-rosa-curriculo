@@ -107,3 +107,11 @@ O layout usa um cabeçalho horizontal, uma abertura em duas colunas com arte de 
 Esta direção deixa de ser um portfólio visual e torna-se um perfil técnico de desenvolvedor. A hierarquia imita um ambiente de terminal contemporâneo: barra lateral de workspace, janela de comando, bloco de status, `git log` para experiências, `stack.json` para competências e diretório de arquivos para formação.
 
 O tema claro é uma estação de trabalho em tons de cinza-verde e o modo escuro se aproxima de um terminal real, mas sem neon excessivo. Verde-esmeralda representa comandos, disponibilidade e ações; coral sinaliza ênfase e chaves de sintaxe. Space Grotesk sustenta títulos e JetBrains Mono define comandos, dados e metadados.
+
+---
+
+## Quinta versão: Monocromático Editorial
+
+Esta direção remove a estética de terminal, ilustrações, card stacks e decoração de interface. A estrutura se concentra em leitura contínua: nome em grande escala, informação editorial, linhas de separação finas e blocos de conteúdo com bastante espaço em branco.
+
+O tema claro usa branco quente, tinta quase preta e azul-marinho como único acento. O tema escuro inverte a relação entre superfície e texto com um azul dessaturado de alta legibilidade. Source Serif 4 dá expressão aos títulos; Manrope mantém todos os textos profissionais precisos e calmos.

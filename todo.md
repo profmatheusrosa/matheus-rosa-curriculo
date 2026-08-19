@@ -24,3 +24,12 @@
 - [x] Manter a alternância persistente entre modo claro e escuro na nova interface.
 - [x] Validar o layout Developer Profile em desktop e celular.
 - [ ] Salvar e entregar a versão escolhida pelo usuário.
+
+# Quinta versão — Minimalista
+
+- [x] Definir uma paleta neutra, tipografia editorial e hierarquia de conteúdo essencial.
+- [x] Remover elementos de terminal, cards e ornamentos não essenciais.
+- [x] Reorganizar experiências, formação e competências em uma página de leitura contínua.
+- [x] Preservar a alternância persistente entre modo claro e escuro com contraste elevado.
+- [x] Validar tipografia, espaçamento e responsividade da versão minimalista.
+- [ ] Salvar e entregar a versão minimalista.
