@@ -113,3 +113,11 @@
 - [x] Preservar o ritmo documental do currículo A4.
 - [x] Validar as seções em desktop e celular.
 - [ ] Salvar e entregar a revisão estrutural.
+
+# Décima quarta versão — Acabamento PDF
+
+- [x] Remover a referência interna exibida no canto superior do documento.
+- [x] Refinar margens, cabeçalho, densidade de conteúdo e ritmo das seções.
+- [x] Melhorar a leitura de datas, cargos e instituições no documento.
+- [x] Validar o layout refinado em desktop e celular.
+- [ ] Salvar e entregar a versão PDF aprimorada.

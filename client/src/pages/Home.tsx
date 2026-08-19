@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       <main id="curriculo" className="resume-sheet">
-        <div className="sheet-running-head"><span>MATHEUS ROSA — CURRÍCULO PROFISSIONAL</span><span>REF. MR/BE/2026 · 01 / 01</span></div>
+        <div className="sheet-running-head"><span>MATHEUS ROSA — CURRÍCULO PROFISSIONAL</span></div>
         <header className="resume-head">
           <div><p className="doc-kicker">DESENVOLVEDOR BACKEND JAVA</p><h1>Matheus<br /><strong>Rosa</strong></h1></div>
           <div className="head-meta"><span className="profile-meta-label">Perfis profissionais</span><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="meta-link-icon" /> github.com/profmatheusrosa</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="meta-link-icon" /> linkedin.com/in/matheusrosabsb</a><p>Brasília, DF</p></div>
