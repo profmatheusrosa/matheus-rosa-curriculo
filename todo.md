@@ -121,3 +121,11 @@
 - [x] Melhorar a leitura de datas, cargos e instituições no documento.
 - [x] Validar o layout refinado em desktop e celular.
 - [ ] Salvar e entregar a versão PDF aprimorada.
+
+# Décima quinta versão — Impressão A4 sem cortes
+
+- [x] Remover a marca externa “MR Currículo Digital” da moldura de tela.
+- [x] Revisar o dimensionamento A4, as margens e o fluxo de impressão.
+- [x] Evitar que blocos de experiência, formação e competências sejam cortados entre páginas.
+- [x] Validar a saída de impressão e PDF em A4.
+- [ ] Salvar e entregar a versão corrigida.

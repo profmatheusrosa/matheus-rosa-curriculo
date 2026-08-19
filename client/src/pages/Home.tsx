@@ -31,16 +31,11 @@ function ThemeButton() {
   return <button type="button" className="document-tool" onClick={toggleTheme} aria-label={dark ? "Ativar modo claro" : "Ativar modo escuro"}>{dark ? <Sun className="size-4" /> : <Moon className="size-4" />}<span>{dark ? "Modo claro" : "Modo escuro"}</span></button>;
 }
 
-function DocumentMark() {
-  return <svg className="document-mark" viewBox="0 0 42 36" fill="none" aria-hidden="true"><path d="M3.5 31.5V5.5L12.1 18.2L20.7 5.5V31.5" /><path d="M25.5 31.5V5.5H31.2C35.2 5.5 37.5 7.7 37.5 11.5C37.5 15.3 35.2 17.4 31.2 17.4H25.5M31.1 17.4L38.2 31.5" /><circle cx="21" cy="18.2" r="2.1" fill="currentColor" stroke="none" /></svg>;
-}
-
 export default function Home() {
   return (
     <div className="document-page">
       <a href="#curriculo" className="skip-link">Pular para currículo</a>
       <header className="document-toolbar">
-        <div className="toolbar-brand"><DocumentMark /><p>currículo digital</p></div>
         <div className="toolbar-actions"><ThemeButton /><button type="button" className="document-tool document-print" onClick={() => window.print()}><Printer className="size-4" /><span>Imprimir / Salvar PDF</span></button></div>
       </header>
 
