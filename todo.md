@@ -83,3 +83,17 @@
 - [x] Remover o e-mail do cabeçalho e de todos os atalhos de contato.
 - [x] Remover integralmente o bloco de disponibilidade.
 - [x] Manter somente GitHub e LinkedIn como formas de contato visíveis.
+
+# Décima primeira versão — Hierarquia de Perfis e Competências
+
+- [x] Mover GitHub e LinkedIn para antes de Brasília, DF no cabeçalho.
+- [x] Substituir o resumo compacto de competências por um formato visual de categorias.
+- [x] Manter a densidade adequada ao documento A4 e à impressão.
+- [x] Validar a nova composição em desktop e celular.
+- [ ] Salvar e entregar a revisão de contatos e competências.
+
+# Ajuste de títulos — Sem numeração
+
+- [x] Remover os números de experiência, formação e competências.
+- [x] Remover os prefixos numéricos de idiomas e perfis profissionais.
+- [x] Validar a hierarquia visual após simplificar os títulos.
