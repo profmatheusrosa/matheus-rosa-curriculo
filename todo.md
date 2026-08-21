@@ -137,3 +137,9 @@
 - [ ] Criar o repositório público matheus-rosa-curriculo no GitHub.
 - [ ] Enviar o código e ativar o GitHub Pages.
 - [ ] Verificar o endereço público publicado.
+
+# Correção de publicação — Subcaminho do GitHub Pages
+
+- [ ] Ajustar o roteamento React para reconhecer /matheus-rosa-curriculo/.
+- [ ] Recompilar e atualizar a branch gh-pages.
+- [ ] Confirmar que a página inicial pública exibe o currículo, não a tela 404.
