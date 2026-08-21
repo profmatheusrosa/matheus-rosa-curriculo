@@ -129,3 +129,11 @@
 - [x] Evitar que blocos de experiência, formação e competências sejam cortados entre páginas.
 - [x] Validar a saída de impressão e PDF em A4.
 - [ ] Salvar e entregar a versão corrigida.
+
+# Publicação — GitHub Pages
+
+- [ ] Configurar o caminho base e a compilação estática para GitHub Pages.
+- [ ] Adicionar o fluxo de trabalho de publicação automática.
+- [ ] Criar o repositório público matheus-rosa-curriculo no GitHub.
+- [ ] Enviar o código e ativar o GitHub Pages.
+- [ ] Verificar o endereço público publicado.
