@@ -188,6 +188,6 @@
 
 # Sincronização final — GitHub e GitHub Pages
 
-- [ ] Enviar o checkpoint de correções manuais ao repositório principal no GitHub.
-- [ ] Atualizar a distribuição estática na branch do GitHub Pages.
-- [ ] Confirmar a conclusão da publicação pública.
+- [x] Enviar o checkpoint de correções manuais ao repositório principal no GitHub.
+- [x] Atualizar a distribuição estática na branch do GitHub Pages.
+- [x] Confirmar a conclusão da publicação pública.
