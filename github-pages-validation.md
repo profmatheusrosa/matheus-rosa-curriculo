@@ -31,3 +31,7 @@ A assinatura foi conferida em desktop e em viewport de 375 px após o retorno de
 ## Descrições profissionais revisadas
 
 As versões em português e inglês foram conferidas na composição A4 após a ampliação das descrições de experiência. O conteúdo completo permaneceu contido na página, com as experiências legíveis e sem sobreposição de blocos.
+
+## Correções manuais de conteúdo
+
+As versões em português e inglês foram verificadas após as correções solicitadas para a experiência na Universidade de Brasília, a migração de sistemas legados na Lakes Environmental e a síntese do perfil profissional. Os textos mantiveram legibilidade e a composição permaneceu integralmente contida na página A4.

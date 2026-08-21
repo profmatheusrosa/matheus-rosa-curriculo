@@ -19,13 +19,13 @@ const resumes = {
     profilesLabel: "Perfis profissionais",
     location: "Brasília, DF",
     profileLabel: "PERFIL",
-    profileSummary: "Desenvolvedor Backend Java com atuação na sustentação e evolução de sistemas corporativos. Conecta dados, aplicações web e processos de TI para manter operações confiáveis e apoiar decisões claras. Combina análise, código, operação e ensino; atualmente cursa Mestrado em Ciência de Dados na Universidade de Brasília.",
+    profileSummary: "Desenvolvedor Backend Java com atuação na sustentação e evolução de sistemas corporativos. Conecta dados, aplicações web e processos de TI para manter operações confiáveis e apoiar decisões claras. Combina análise, código, operação e ensino.",
     sections: { experience: "Experiência profissional", education: "Formação acadêmica", skills: "Competências", languages: "Idiomas" },
     experiences: [
       { period: "2026 — atual", role: "Técnico Bancário — TI", organization: "CAIXA", entries: ["Presta suporte técnico a desenvolvedores, oferecendo orientações sobre ferramentas, tecnologias e padrões de desenvolvimento adotados pela organização.", "Contribui para a padronização de práticas e soluções de software."] },
       { period: "2019 — atual", role: "Professor de TI", organization: "Escola Técnica de Brasília", entries: ["Ministra disciplinas de Banco de Dados, Engenharia de Software, Programação Orientada a Objetos com Java e Gestão de TI, integrando fundamentos teóricos e atividades práticas."] },
-      { period: "2016 — 2026", role: "Analista de TI", organization: "Universidade de Brasília", entries: ["Atuou durante dez anos em diferentes frentes de tecnologia, incluindo desenvolvimento em Java, monitoramento e manutenção de sistemas.", "Foi responsável por sites corporativos, incluindo o Portal da UnB, utilizando CMS como Joomla e WordPress.", "Participou de processos de contratações públicas de TI, apoiando atividades técnicas e administrativas.", "Atuou no Departamento de Comunicação, administrando o servidor interno de armazenamento de mídias, banco de dados e sistemas web."] },
-      { period: "2013 — 2014", role: "Programador", organization: "Lakes Environmental · Waterloo, Canadá", entries: ["Realizou manutenção de sistemas web voltados à área ambiental com JavaScript, jQuery e Bootstrap."] },
+      { period: "2016 — 2026", role: "Analista de TI", organization: "Universidade de Brasília", entries: ["Atuou em diferentes frentes de tecnologia, incluindo desenvolvimento em Java, monitoramento e manutenção de sistemas.", "Foi responsável por sites corporativos, incluindo o Portal da UnB, utilizando os CMS Joomla e WordPress.", "Participou de processos de contratações públicas de TI, apoiando atividades técnicas e administrativas.", "Atuou no Departamento de Comunicação, administrando o servidor de armazenamento de mídias, o banco de dados e os sistemas internos."] },
+      { period: "2013 — 2014", role: "Programador", organization: "Lakes Environmental · Waterloo, Canadá", entries: ["Realizou manutenção e migração de sistemas legados voltados à área ambiental, utilizando ASP.NET, JavaScript, jQuery e Bootstrap."] },
     ],
     education: [
       { degree: "Mestrado em Ciência de Dados", school: "Universidade de Brasília", date: "Em andamento" },
@@ -52,13 +52,13 @@ const resumes = {
     profilesLabel: "Professional profiles",
     location: "Brasília, Brazil",
     profileLabel: "PROFILE",
-    profileSummary: "Java Backend Developer with experience maintaining and evolving enterprise systems. Connects data, web applications and IT processes to keep operations reliable and support clear decisions. Combines analysis, code, operations and teaching; currently pursuing a Master's Degree in Data Science at the University of Brasília.",
+    profileSummary: "Java Backend Developer with experience maintaining and evolving enterprise systems. Connects data, web applications and IT processes to keep operations reliable and support clear decisions. Combines analysis, code, operations and teaching.",
     sections: { experience: "Professional experience", education: "Education", skills: "Skills", languages: "Languages" },
     experiences: [
       { period: "2026 — present", role: "Banking Technician — IT", organization: "CAIXA", entries: ["Provides technical support to developers, offering guidance on tools, technologies, and development standards adopted by the organization.", "Contributes to the standardization of software practices and solutions."] },
       { period: "2019 — present", role: "IT Instructor", organization: "Escola Técnica de Brasília", entries: ["Teaches Database Systems, Software Engineering, Object-Oriented Programming with Java, and IT Management, integrating theoretical foundations with hands-on activities."] },
-      { period: "2016 — 2026", role: "IT Analyst", organization: "University of Brasília", entries: ["Worked for ten years across different technology areas, including Java development, system monitoring, and maintenance.", "Was responsible for corporate websites, including the University of Brasília portal, using CMS platforms such as Joomla and WordPress.", "Participated in public IT procurement processes, supporting technical and administrative activities.", "Worked in the Communications Department, administering the internal media storage server, database, and web systems."] },
-      { period: "2013 — 2014", role: "Programmer", organization: "Lakes Environmental · Waterloo, Canada", entries: ["Maintained web-based environmental systems using JavaScript, jQuery, and Bootstrap."] },
+      { period: "2016 — 2026", role: "IT Analyst", organization: "University of Brasília", entries: ["Worked across different technology areas, including Java development, system monitoring, and maintenance.", "Was responsible for corporate websites, including the University of Brasília portal, using the Joomla and WordPress CMS platforms.", "Participated in public IT procurement processes, supporting technical and administrative activities.", "Worked in the Communications Department, administering the media storage server, database, and internal systems."] },
+      { period: "2013 — 2014", role: "Programmer", organization: "Lakes Environmental · Waterloo, Canada", entries: ["Maintained and migrated legacy systems for the environmental sector using ASP.NET, JavaScript, jQuery, and Bootstrap."] },
     ],
     education: [
       { degree: "Master's Degree in Data Science", school: "University of Brasília", date: "In progress" },

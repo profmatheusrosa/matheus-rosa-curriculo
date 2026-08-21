@@ -178,3 +178,10 @@
 - [x] Atualizar os equivalentes em inglês com a mesma precisão técnica.
 - [x] Revisar o texto aprovado para clareza, gramática e consistência editorial.
 - [x] Validar a paginação e publicar a atualização no GitHub Pages.
+
+# Correções manuais — Experiências profissionais
+
+- [x] Aplicar os ajustes de redação solicitados para a experiência na Universidade de Brasília.
+- [x] Atualizar a experiência na Lakes Environmental com manutenção e migração de sistemas legados.
+- [x] Ajustar o resumo profissional conforme a edição visual, sem alterar seu sentido central.
+- [x] Atualizar os equivalentes em inglês e validar a revisão antes do novo checkpoint.
