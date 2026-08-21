@@ -7,3 +7,7 @@ O repositório público e a branch `gh-pages` foram criados, e o GitHub Pages es
 ## Validação após correção
 
 Após configurar o roteador com a base do Vite, atualizar a branch `gh-pages` e acessar o endereço com um parâmetro de versão, o currículo carregou corretamente no GitHub Pages. A página pública exibiu o conteúdo completo do currículo, incluindo cabeçalho, experiências, formação, competências e idiomas.
+
+## Atualização de idiomas
+
+A publicação da revisão visual de idiomas foi processada no commit `3f391a3`. A página pública continuou a carregar corretamente após a atualização.

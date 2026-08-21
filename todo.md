@@ -149,4 +149,4 @@
 - [x] Remover o painel cinza e a listra azul da seção de idiomas.
 - [x] Aplicar divisórias, tipografia e espaçamento coerentes com o documento A4.
 - [x] Validar a seção em desktop, celular e impressão.
-- [ ] Salvar e entregar o ajuste de idiomas.
+- [x] Salvar e entregar o ajuste de idiomas.
