@@ -177,4 +177,4 @@
 - [x] Aplicar as descrições revisadas em português nas quatro experiências profissionais.
 - [x] Atualizar os equivalentes em inglês com a mesma precisão técnica.
 - [x] Revisar o texto aprovado para clareza, gramática e consistência editorial.
-- [ ] Validar a paginação e publicar a atualização no GitHub Pages.
+- [x] Validar a paginação e publicar a atualização no GitHub Pages.
