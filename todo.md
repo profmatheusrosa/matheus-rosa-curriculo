@@ -153,6 +153,6 @@
 
 # Ajuste de conteúdo — Formação acadêmica
 
-- [ ] Reposicionar “Graduação Sanduíche” antes de “Graduação em Computação”.
-- [ ] Renomear “Pós em Gestão e Desenvolvimento de Sistemas de Informação” para “Especialização em Gestão e Desenvolvimento de Sistemas de Informação”.
+- [x] Reposicionar “Graduação Sanduíche” antes de “Graduação em Computação”.
+- [x] Renomear “Pós em Gestão e Desenvolvimento de Sistemas de Informação” para “Especialização em Gestão e Desenvolvimento de Sistemas de Informação”.
 - [ ] Refletir os ajustes na versão em inglês quando a alternância de idioma for implementada.
