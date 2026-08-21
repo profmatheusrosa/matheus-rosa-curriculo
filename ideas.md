@@ -78,6 +78,12 @@ O wordmark combina o nome em Manrope com o monograma **MR** ao lado, desenhado a
 - O Azul de Referência `#1D5FA7` funciona sobretudo como cor de índice: réguas, âncoras, numerais, links e palavras-chave, nunca como massa decorativa dominante.
 - Cada seção principal mantém ao menos um sinal da Linha de Código: régua azul, metadado monoespaçado, referência numerada ou anotação de linha do tempo.
 
+## Style Decisions — Currículo A4 Digital
+
+- A versão documental A4 permanece a direção ativa; controles de idioma, tema e impressão são utilitários externos à folha.
+- Um selo geométrico discreto com o monograma **MR** e um índice “Sistemas · Dados · Educação” compõem a assinatura recorrente do documento.
+- As seções usam metadados compactos para explicitar o perfil técnico, e os textos de resumo e experiência priorizam confiabilidade operacional, sistemas, dados e educação.
+
 ---
 
 ## Segunda versão: Arquivo de Operações

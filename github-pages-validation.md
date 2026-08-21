@@ -11,3 +11,11 @@ Após configurar o roteador com a base do Vite, atualizar a branch `gh-pages` e 
 ## Atualização de idiomas
 
 A publicação da revisão visual de idiomas foi processada no commit `3f391a3`. A página pública continuou a carregar corretamente após a atualização.
+
+## Validação do seletor bilíngue
+
+A versão com o controle PT / EN foi conferida em desktop e em um viewport móvel de 375 px. O seletor permaneceu visível, a folha A4 preservou sua leitura documental e os metadados técnicos e o selo MR continuaram legíveis em telas compactas.
+
+## Publicação bilíngue
+
+A distribuição com a versão PT / EN foi enviada à branch `gh-pages` no commit `bd91521`. A primeira consulta por navegador ainda mostrou uma página em cache, mas a compilação do GitHub Pages concluiu com sucesso nesse commit. A resposta pública e o pacote JavaScript publicados foram conferidos diretamente: eles referenciam os novos assets e contêm a lógica `resume-language` e o conteúdo “PROFESSIONAL RESUME”.

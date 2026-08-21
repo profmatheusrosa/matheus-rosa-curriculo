@@ -155,4 +155,12 @@
 
 - [x] Reposicionar “Graduação Sanduíche” antes de “Graduação em Computação”.
 - [x] Renomear “Pós em Gestão e Desenvolvimento de Sistemas de Informação” para “Especialização em Gestão e Desenvolvimento de Sistemas de Informação”.
-- [ ] Refletir os ajustes na versão em inglês quando a alternância de idioma for implementada.
+- [x] Refletir os ajustes na versão em inglês quando a alternância de idioma for implementada.
+
+# Décima sétima versão — Currículo bilíngue
+
+- [x] Criar conteúdo completo equivalente em inglês para todas as seções do currículo.
+- [x] Adicionar um controle PT / EN acessível e persistente ao lado dos controles de tema e impressão.
+- [x] Alternar título da página, textos de interface e conteúdo documental sem alterar o layout A4.
+- [x] Garantir que a impressão respeite o idioma selecionado e preserve a paginação em duas folhas.
+- [x] Validar a versão em português e inglês no GitHub Pages e entregar a atualização.
