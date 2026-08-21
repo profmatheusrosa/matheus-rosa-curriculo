@@ -19,3 +19,7 @@ A versão com o controle PT / EN foi conferida em desktop e em um viewport móve
 ## Publicação bilíngue
 
 A distribuição com a versão PT / EN foi enviada à branch `gh-pages` no commit `bd91521`. A primeira consulta por navegador ainda mostrou uma página em cache, mas a compilação do GitHub Pages concluiu com sucesso nesse commit. A resposta pública e o pacote JavaScript publicados foram conferidos diretamente: eles referenciam os novos assets e contêm a lógica `resume-language` e o conteúdo “PROFESSIONAL RESUME”.
+
+## Ajuste do cabeçalho
+
+O cabeçalho compacto foi conferido em desktop e em viewport de 375 px. O cargo passou a começar mais próximo do cabeçalho corrido, e “Matheus Rosa” foi mantido em uma única linha, sem itálico, sem comprometer a leitura em telas menores.
