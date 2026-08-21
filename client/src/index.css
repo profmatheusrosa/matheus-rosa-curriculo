@@ -23,3 +23,9 @@
 
 /* Subtítulos de competências: cor de texto principal, sem acento azul. */
 .competency-panels h3{color:var(--ink)}
+
+/* Assinatura: composição em duas linhas, com presença editorial ampliada. */
+.resume-head h1{font-size:clamp(4.4rem,8.1vw,6.7rem);letter-spacing:-.09em;line-height:.72;white-space:normal}
+.resume-head h1 strong{display:block}
+@media(max-width:760px){.resume-head h1{font-size:clamp(4.1rem,21vw,6.3rem);line-height:.72}}
+@media print{.resume-head h1{font-size:54pt;line-height:.72}}

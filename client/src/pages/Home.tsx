@@ -117,7 +117,7 @@ export default function Home() {
       <main id="curriculo" className="resume-sheet">
         <div className="sheet-running-head"><span>{copy.runningHead}</span><div className="sheet-document-index"><span className="sheet-document-index-label">{copy.documentIndex}</span><span className="sheet-seal" aria-label={copy.sealLabel}>MR</span></div></div>
         <header className="resume-head">
-          <div><p className="doc-kicker">{copy.role}</p><h1>Matheus <strong>Rosa</strong></h1></div>
+          <div><p className="doc-kicker">{copy.role}</p><h1>Matheus<br /><strong>Rosa</strong></h1></div>
           <div className="head-meta"><span className="profile-meta-label">{copy.profilesLabel}</span><a href="https://github.com/profmatheusrosa" target="_blank" rel="noreferrer"><Github className="meta-link-icon" /> github.com/profmatheusrosa</a><a href="https://linkedin.com/in/matheusrosabsb" target="_blank" rel="noreferrer"><Linkedin className="meta-link-icon" /> linkedin.com/in/matheusrosabsb</a><p>{copy.location}</p></div>
         </header>
 

@@ -23,3 +23,7 @@ A distribuição com a versão PT / EN foi enviada à branch `gh-pages` no commi
 ## Ajuste do cabeçalho
 
 O cabeçalho compacto foi conferido em desktop e em viewport de 375 px. O cargo passou a começar mais próximo do cabeçalho corrido, e “Matheus Rosa” foi mantido em uma única linha, sem itálico, sem comprometer a leitura em telas menores.
+
+## Assinatura em duas linhas
+
+A assinatura foi conferida em desktop e em viewport de 375 px após o retorno de “Rosa” à segunda linha. O aumento de escala reforçou a presença do nome, e os metadados de perfil continuaram legíveis sem sobreposição.
