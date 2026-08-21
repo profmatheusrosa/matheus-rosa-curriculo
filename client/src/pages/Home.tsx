@@ -21,7 +21,6 @@ const resumes = {
     profileLabel: "PERFIL",
     profileSummary: "Desenvolvedor Backend Java com atuação na sustentação e evolução de sistemas corporativos. Conecta dados, aplicações web e processos de TI para manter operações confiáveis e apoiar decisões claras. Combina análise, código, operação e ensino; atualmente cursa Mestrado em Ciência de Dados na Universidade de Brasília.",
     sections: { experience: "Experiência profissional", education: "Formação acadêmica", skills: "Competências", languages: "Idiomas" },
-    sectionMeta: { experience: "CARREIRA", education: "FORMAÇÃO", skills: "TECNOLOGIAS", languages: "FLUÊNCIA" },
     experiences: [
       { period: "2026 — atual", role: "Técnico Bancário — TI", organization: "CAIXA", entries: ["Capítulo de Codificação."] },
       { period: "2019 — atual", role: "Professor de TI", organization: "Escola Técnica de Brasília", entries: ["Ensino de Programação, Banco de Dados, Gestão de TI e Modelagem de Sistemas, conectando fundamentos e aplicação prática.", "Desenvolvimento de materiais didáticos e projetos práticos para apoiar a aprendizagem técnica."] },
@@ -55,7 +54,6 @@ const resumes = {
     profileLabel: "PROFILE",
     profileSummary: "Java Backend Developer with experience maintaining and evolving enterprise systems. Connects data, web applications and IT processes to keep operations reliable and support clear decisions. Combines analysis, code, operations and teaching; currently pursuing a Master's Degree in Data Science at the University of Brasília.",
     sections: { experience: "Professional experience", education: "Education", skills: "Skills", languages: "Languages" },
-    sectionMeta: { experience: "CAREER", education: "EDUCATION", skills: "TOOLKIT", languages: "FLUENCY" },
     experiences: [
       { period: "2026 — present", role: "Banking Technician — IT", organization: "CAIXA", entries: ["Coding Chapter."] },
       { period: "2019 — present", role: "IT Instructor", organization: "Escola Técnica de Brasília", entries: ["Teaches Programming, Databases, IT Management and Systems Modeling, connecting foundations to hands-on implementation.", "Develops teaching materials and practical projects that support technical learning."] },
@@ -126,12 +124,12 @@ export default function Home() {
         <section className="profile-summary"><span>{copy.profileLabel}</span><p>{copy.profileSummary}</p></section>
 
         <div className="resume-layout">
-          <section className="doc-section" id="experiencia"><h2><span>{copy.sectionMeta.experience}</span>{copy.sections.experience}</h2><div className="experience-doc-list">{copy.experiences.map((item) => <article key={item.organization + item.period}><div className="experience-date">{item.period}</div><div><h3>{item.role}</h3><p className="organization">{item.organization}</p><ul>{item.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></article>)}</div></section>
-          <section className="doc-section" id="formacao"><h2><span>{copy.sectionMeta.education}</span>{copy.sections.education}</h2><div className="education-doc-list">{copy.education.map((item) => <article key={item.degree}><div><h3>{item.degree}</h3><p>{item.school}</p></div><time>{item.date}</time></article>)}</div></section>
+          <section className="doc-section" id="experiencia"><h2>{copy.sections.experience}</h2><div className="experience-doc-list">{copy.experiences.map((item) => <article key={item.organization + item.period}><div className="experience-date">{item.period}</div><div><h3>{item.role}</h3><p className="organization">{item.organization}</p><ul>{item.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></article>)}</div></section>
+          <section className="doc-section" id="formacao"><h2>{copy.sections.education}</h2><div className="education-doc-list">{copy.education.map((item) => <article key={item.degree}><div><h3>{item.degree}</h3><p>{item.school}</p></div><time>{item.date}</time></article>)}</div></section>
         </div>
 
-        <section className="doc-section document-skills-band"><h2><span>{copy.sectionMeta.skills}</span>{copy.sections.skills}</h2><div className="competency-panels">{copy.competencyAreas.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.description}</p></article>)}</div></section>
-        <section className="doc-section languages-section"><h2><span>{copy.sectionMeta.languages}</span>{copy.sections.languages}</h2><div className="language-document-card"><strong>{copy.language.name}</strong><span>{copy.language.proficiency}</span><small>{copy.language.credential}</small></div></section>
+        <section className="doc-section document-skills-band"><h2>{copy.sections.skills}</h2><div className="competency-panels">{copy.competencyAreas.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.description}</p></article>)}</div></section>
+        <section className="doc-section languages-section"><h2>{copy.sections.languages}</h2><div className="language-document-card"><strong>{copy.language.name}</strong><span>{copy.language.proficiency}</span><small>{copy.language.credential}</small></div></section>
         <footer className="sheet-footer"><span>{copy.footer.description}</span><span>{copy.footer.updated}</span></footer>
       </main>
       <p className="screen-hint"><Download className="size-3.5" /> {copy.controls.hint}</p>
