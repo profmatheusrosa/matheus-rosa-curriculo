@@ -164,3 +164,17 @@
 - [x] Alternar título da página, textos de interface e conteúdo documental sem alterar o layout A4.
 - [x] Garantir que a impressão respeite o idioma selecionado e preserve a paginação em duas folhas.
 - [x] Validar a versão em português e inglês no GitHub Pages e entregar a atualização.
+
+# Revisão de conteúdo — Experiências profissionais
+
+- [x] Redigir descrições aprimoradas em português a partir das informações confirmadas pelo usuário.
+- [x] Preparar equivalentes em inglês para a futura versão bilíngue.
+- [x] Destacar contribuições técnicas sem inventar métricas ou resultados não confirmados.
+- [x] Submeter o texto para aprovação antes de implementá-lo no currículo.
+
+# Implementação aprovada — Experiências profissionais
+
+- [x] Aplicar as descrições revisadas em português nas quatro experiências profissionais.
+- [x] Atualizar os equivalentes em inglês com a mesma precisão técnica.
+- [x] Revisar o texto aprovado para clareza, gramática e consistência editorial.
+- [ ] Validar a paginação e publicar a atualização no GitHub Pages.

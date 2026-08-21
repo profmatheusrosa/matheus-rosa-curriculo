@@ -27,3 +27,7 @@ O cabeçalho compacto foi conferido em desktop e em viewport de 375 px. O cargo 
 ## Assinatura em duas linhas
 
 A assinatura foi conferida em desktop e em viewport de 375 px após o retorno de “Rosa” à segunda linha. O aumento de escala reforçou a presença do nome, e os metadados de perfil continuaram legíveis sem sobreposição.
+
+## Descrições profissionais revisadas
+
+As versões em português e inglês foram conferidas na composição A4 após a ampliação das descrições de experiência. O conteúdo completo permaneceu contido na página, com as experiências legíveis e sem sobreposição de blocos.
