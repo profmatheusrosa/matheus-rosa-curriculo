@@ -20,3 +20,6 @@
 /* Títulos de seção: mesma família serifada e escala editorial do nome, com acento azul. */
 .doc-section h2{color:var(--accent);font-family:"Source Serif 4",serif;font-size:1.48rem;font-weight:600;letter-spacing:-.045em;text-transform:none}
 @media print{.doc-section h2{font-family:"Source Serif 4",serif;font-size:17pt;font-weight:600;letter-spacing:-.045em;text-transform:none}.dark .resume-sheet .doc-section h2{color:#194e76}}
+
+/* Subtítulos de competências: cor de texto principal, sem acento azul. */
+.competency-panels h3{color:var(--ink)}
