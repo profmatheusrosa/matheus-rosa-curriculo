@@ -185,3 +185,9 @@
 - [x] Atualizar a experiência na Lakes Environmental com manutenção e migração de sistemas legados.
 - [x] Ajustar o resumo profissional conforme a edição visual, sem alterar seu sentido central.
 - [x] Atualizar os equivalentes em inglês e validar a revisão antes do novo checkpoint.
+
+# Sincronização final — GitHub e GitHub Pages
+
+- [ ] Enviar o checkpoint de correções manuais ao repositório principal no GitHub.
+- [ ] Atualizar a distribuição estática na branch do GitHub Pages.
+- [ ] Confirmar a conclusão da publicação pública.
