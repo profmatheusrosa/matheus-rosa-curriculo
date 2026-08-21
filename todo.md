@@ -150,3 +150,9 @@
 - [x] Aplicar divisórias, tipografia e espaçamento coerentes com o documento A4.
 - [x] Validar a seção em desktop, celular e impressão.
 - [x] Salvar e entregar o ajuste de idiomas.
+
+# Ajuste de conteúdo — Formação acadêmica
+
+- [ ] Reposicionar “Graduação Sanduíche” antes de “Graduação em Computação”.
+- [ ] Renomear “Pós em Gestão e Desenvolvimento de Sistemas de Informação” para “Especialização em Gestão e Desenvolvimento de Sistemas de Informação”.
+- [ ] Refletir os ajustes na versão em inglês quando a alternância de idioma for implementada.

@@ -14,9 +14,9 @@ const experiences = [
 
 const education = [
   ["Mestrado em Ciência de Dados", "Universidade de Brasília", "Em andamento"],
-  ["Pós em Gestão e Desenvolvimento de Sistemas de Informação", "Faculdade JK", "2016 — 2017"],
-  ["Graduação em Computação", "Universidade de Brasília", "2009 — 2015"],
+  ["Especialização em Gestão e Desenvolvimento de Sistemas de Informação", "Faculdade JK", "2016 — 2017"],
   ["Graduação Sanduíche", "University of Waterloo · Canadá", "2012 — 2013"],
+  ["Graduação em Computação", "Universidade de Brasília", "2009 — 2015"],
 ];
 
 const competencyAreas = [
